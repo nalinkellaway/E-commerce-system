@@ -1,45 +1,48 @@
+package coursework;
+
 public class User {
-
 	private int userID;
-	private string username;
-	private string surname;
-
-	public Integer getUserID() {
-		// TODO - implement User.getUserID
-		throw new UnsupportedOperationException();
+	private String username;
+	private String surname;
+	private Address address;
+	
+	public User(int userID, String username, String surname, Address address) {
+		this.userID = userID;
+		this.username = username;
+		this.surname = surname;
+		this.address = address;
 	}
-
-	/**
-	 * 
-	 * @param userID
-	 */
-	public void setUserID(Integer userID) {
-		// TODO - implement User.setUserID
-		throw new UnsupportedOperationException();
+	
+	public void setUserID(int userID) {
+		this.userID = userID;
 	}
-
-	public string getUsername() {
-		return this.username;
+	
+	public int getUserID() {
+		return this.userID;
 	}
-
-	/**
-	 * 
-	 * @param username
-	 */
-	public void setUsername(string username) {
+	
+	public void setUsername(String username) {
 		this.username = username;
 	}
-
-	public string getSurname() {
-		return this.surname;
+	
+	public String getUsername() {
+		return this.username;
 	}
-
-	/**
-	 * 
-	 * @param surname
-	 */
-	public void setSurname(string surname) {
+	
+	public void setSurname(String surname) {
 		this.surname = surname;
 	}
-
+	
+	public String getSurname() {
+		return this.surname;
+	}
+	
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	
+	public Address getAddress() {
+		return this.address;
+	}
+	
 }

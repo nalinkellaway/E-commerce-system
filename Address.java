@@ -1,43 +1,37 @@
+package coursework;
+
 public class Address {
-
 	private int houseNo;
-	private string postcode;
-	private string city;
-
-	public int getHouseNo() {
-		return this.houseNo;
+	private String postcode;
+	private String city;
+	
+	public Address (int houseNo, String postcode, String city) {
+		this.houseNo = houseNo;
+		this.postcode = postcode;
+		this.city = city;
 	}
-
-	/**
-	 * 
-	 * @param houseNo
-	 */
+	
 	public void setHouseNo(int houseNo) {
 		this.houseNo = houseNo;
 	}
-
-	public string getPostcode() {
-		return this.postcode;
+	
+	public int getHouseNo() {
+		return this.houseNo;
 	}
-
-	/**
-	 * 
-	 * @param postcode
-	 */
-	public void setPostcode(string postcode) {
+	
+	public void setPostcode(String postcode) {
 		this.postcode = postcode;
 	}
-
-	public string getCity() {
-		return this.city;
+	
+	public String getPostcode() {
+		return this.postcode;
 	}
-
-	/**
-	 * 
-	 * @param city
-	 */
-	public void setCity(string city) {
+	
+	public void setCity(String city) {
 		this.city = city;
 	}
-
+	
+	public String getCity() {
+		return this.city;
+	}
 }

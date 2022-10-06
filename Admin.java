@@ -1,13 +1,8 @@
-public class Admin extends User {
+package coursework;
 
-	public void addProduct() {
-		// TODO - implement Admin.addProduct
-		throw new UnsupportedOperationException();
-	}
-
-	public void viewProducts() {
-		// TODO - implement Admin.viewProducts
-		throw new UnsupportedOperationException();
+public class Admin extends User{
+	public Admin(int userID, String username, String surname, Address address) {
+		super(userID, username, surname, address);
 	}
 
 }
